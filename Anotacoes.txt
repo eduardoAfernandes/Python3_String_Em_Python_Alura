@@ -1,0 +1,40 @@
+url = "bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&quantidade=100"
+print(url)
+
+
+### Fatiamento de Strings somente faz uma copia, sendo assim necessário guardar a saida em outra variavel
+url_base = url[0:19]
+print(url_base)
+
+url_parametros = url[20:36]
+print(url_parametros)
+
+
+
+*** Metodo FIND
+Retorna o índice mais baixo na string onde a substring sub é encontrado dentro da fatia s[start:end]. Argumentos opcionais como start e end são interpretados como na notação de fatiamento. Retorna -1 se sub não for localizado.
+
+texto.find('c')
+
+Nota O método find() deve ser usado apenas se precisarmos conhecer a posição de sub. Para verificar se sub é ou não uma substring, use o operador in:
+>>>
+>>> 'Py' in 'Python'
+True
+
+
+*** Metodo LEN
+Retorna o tamanho do texto
+
+texto = 'abc'
+
+len(texto) retorna 3
+
+
+
+*** Retirar espacos vazios
+url = url.replace(" ", "")
+	ou
+url = url.strip()
+
+** lstrip() retira os espacos em branco do lado esquerdo
+** rstrip() retira os espacos em branco do lado direito
