@@ -37,4 +37,8 @@ url = url.replace(" ", "")
 url = url.strip()
 
 ** lstrip() retira os espacos em branco do lado esquerdo
-** rstrip() retira os espacos em branco do lado direito
+** rstrip() retira os espacos em branco do lado direito.
+
+
+
+import re # Regular Expressions
